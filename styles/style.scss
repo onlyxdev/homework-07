@@ -101,7 +101,8 @@ header {
     align-items: center;
     width: 120px;
     margin-right: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
+    cursor: pointer;
     
     span {
         color: white;
@@ -154,6 +155,7 @@ header {
                 border-radius: 5px;
                 display: flex;
                 color: black;
+                cursor: pointer;
 
                 .noticias-img-container {
                     width: 30%;
