@@ -93,7 +93,7 @@ header {
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    background-color: red;
+    background-color: $bg-body;
     padding: 10px 4%;
     display: flex;
     gap: 15px;
@@ -182,16 +182,103 @@ header {
 
     .diversos {
         width: 40%;
-        background-color: $bg-secoes;
+        height: 100%;
+        background-color: $bg-body;
         border-radius: 4px;
     }
 
 }
 
-.header-noticias, .header-processos {
+.header-noticias, .header-processos, .header-aniv {
     height: 50px;
     display: flex;
     align-items: center;
     padding-left: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
-}  
+}
+
+.processos {
+    height: 380px;
+    margin-bottom: 20px;
+
+    .header-processos {
+        background-color: $bg-secoes;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .sistemas-processos-body {
+        width: 100%;
+        padding: 15px;
+        background-color: $bg-secoes;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        
+        .primeira-linha-icons, .segunda-linha-icons, .terceira-linha-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding-bottom: 20px;
+
+            .box-icones {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                text-decoration: none;
+                color: green;
+                background-color: white;
+                height: 80px;
+                width: 130px;
+            }
+        }
+
+        .terceira-linha-icons {
+            justify-content: start;
+            padding-left: 25px;
+        }
+     }
+    
+}
+
+.aniv {
+    background-color: $bg-secoes;
+    font-size: 12px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    .aniv-container {
+        display: flex;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        .aniv-cards {
+            height: 100px;
+            display: flex;
+            align-items: center;
+
+            img {
+                border-radius: 100%;
+                height: 70px;
+                margin: 10px;
+                padding-left: 15px;
+            }
+        }
+
+        .textos-aniv {
+            padding: 15px;
+
+            h2 {
+                padding-bottom: 10px;
+            }
+
+            p {
+                padding-bottom: 2px;
+            }
+
+            .data-icon {
+                display: flex;
+                color: rgb(0, 0, 0, .5);
+                font-size: 14px;
+            }
+        }
+    }
+}
