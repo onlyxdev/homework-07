@@ -30,6 +30,11 @@ module.exports = {
       template: './index.html',
       hash: true
     }),
+    new HtmlWebpackPlugin({
+      filename: 'about.html',
+      template: './about.html',
+      hash: true
+    }),
     new CopyPlugin({
       patterns: [
         { from: "./img", to: "./img" },
