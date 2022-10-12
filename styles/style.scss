@@ -22,8 +22,7 @@ body {
 header {
     width: 100%;
     height: 50px;
-    background-color: rgb(7, 160, 147);
-
+    background: url("../img/patternECOStransparente.png"), linear-gradient(to bottom right, #295ba7, #78b454);
     nav {
       display: flex;
       align-items: center;
