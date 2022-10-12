@@ -1,5 +1,5 @@
 // Imports
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 
 * {
     padding: 0;
@@ -16,13 +16,18 @@ html {
 }
 
 body {
-    background-color: $bg-body;
+    background-color: $bg-body;    
+    font-weight: 300;
+    font-size: 13px;
 }
 
 header {
     width: 100%;
     height: 50px;
     background: url("../img/patternECOStransparente.png"), linear-gradient(to bottom right, #295ba7, #78b454);
+    position: fixed;
+    top: 0;
+
     nav {
       display: flex;
       align-items: center;
@@ -60,16 +65,33 @@ header {
                         }
                     }
                 }
+                .inicio-container {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100px;
+                    font-size: 20px;
+                    font-weight: bold;                
+                }
+
         }
 
         .search-header {
             input {
                 height: 30px;
-                width: 400px;
+                width: 400px;                
+                padding-left: 10px;
+                background-color: rgba(0, 0, 0, .1);
+                border: 1px solid rgba(0, 0, 0, .1);
+                border-radius: 5px;
+            }
+
+            input::placeholder {
+                color: white;
             }
 
             span {
-                margin-left: -25px;
+                margin-left: -25px;                
+                color: white;
             }
         }
 }
@@ -77,20 +99,35 @@ header {
 .container-header-40 {
     display: flex;
     align-items: center;
+    width: 120px;
+    margin-right: 20px;
+    justify-content: space-between;
     
     span {
         color: white;
         height: 20px;
+        font-size: 25px;
+    }
+
+    :last-child {
+        font-size: 18px;
+    }
+
+    .menu-perfil {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 65px;
     }
 
     img {
-        height: 50px;
+        height: 40px;
         border-radius: 100px 100px;
     }
 }
 
 .container-every  {
-    margin: 0 auto;
+    margin: 50px auto 0px auto;
     width: 100%;
     height: 100%;
     background-color: $bg-body;
