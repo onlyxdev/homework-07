@@ -17,32 +17,14 @@ html {
 
 header {
     .container-header-60 {
-    
         ul {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            .inicio-container {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
+            .inicio-container-perfil {
                 width: 350px;
-                height: 45px;
-                font-size: 20px;
-                font-weight: bold;
-                cursor: pointer;
-    
+            
                 p{
-                    color: white;
-                    font-weight: bold;
                     width: 300px;
                 }
-            }
-    
-            .inicio-container:hover {
-                background-color: rgba(0, 0, 0, .3);
-            }
-    
+            }   
         }
     }         
 }
