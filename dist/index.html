@@ -1,69 +1,335 @@
-<head><script defer src="bundle.js?06f43410e4c8f095cec3"></script></head>Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve 'C:\Users\Usuario\Desktop\GIT\DBC\HTML-CSS\Homeworks\homework-07\index.html' in 'C:\Users\Usuario\Desktop\GIT\DBC\HTM  L-CSS\Homeworks\homework-07'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'C:\Users\Usuario\Desktop\GIT\DBC\HTML-CSS\Homeworks\homework-07\index.html' in 'C:\Users\Usuari  o\Desktop\GIT\DBC\HTML-CSS\Homeworks\homework-07'
-      at C:\Users\Usuario\Desktop\GIT\DBC\HTML-CSS\Homeworks\homework-07\node_modules\webpack\lib\Compilation.js:2016:28
-      at C:\Users\Usuario\Desktop\GIT\DBC\HTML-CSS\Homeworks\homework-07\node_modules\webpack\lib\NormalModuleFactory.js:798:13
-      at eval (eval at create (C:\Users\Usuario\Desktop\GIT\DBC\HTML-CSS\Homeworks\homework-07\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>  :10:1)
-      at C:\Users\Usuario\Desktop\GIT\DBC\HTML-CSS\Homeworks\homework-07\node_modules\webpack\lib\NormalModuleFactory.js:270:22
-      at eval (eval at create (C:\Users\Usuario\Desktop\GIT\DBC\HTML-CSS\Homeworks\homework-07\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>  :9:1)
-      at C:\Users\Usuario\Desktop\GIT\DBC\HTML-CSS\Homeworks\homework-07\node_modules\webpack\lib\NormalModuleFactory.js:434:22
-      at C:\Users\Usuario\Desktop\GIT\DBC\HTML-CSS\Homeworks\homework-07\node_modules\webpack\lib\NormalModuleFactory.js:116:11
-      at C:\Users\Usuario\Desktop\GIT\DBC\HTML-CSS\Homeworks\homework-07\node_modules\webpack\lib\NormalModuleFactory.js:670:25
-      at C:\Users\Usuario\Desktop\GIT\DBC\HTML-CSS\Homeworks\homework-07\node_modules\webpack\lib\NormalModuleFactory.js:855:8
-      at C:\Users\Usuario\Desktop\GIT\DBC\HTML-CSS\Homeworks\homework-07\node_modules\webpack\lib\NormalModuleFactory.js:975:5
-  
-  - Compilation.js:2016 
-    [homework-07]/[webpack]/lib/Compilation.js:2016:28
-  
-  - NormalModuleFactory.js:798 
-    [homework-07]/[webpack]/lib/NormalModuleFactory.js:798:13
-  
-  
-  - NormalModuleFactory.js:270 
-    [homework-07]/[webpack]/lib/NormalModuleFactory.js:270:22
-  
-  
-  - NormalModuleFactory.js:434 
-    [homework-07]/[webpack]/lib/NormalModuleFactory.js:434:22
-  
-  - NormalModuleFactory.js:116 
-    [homework-07]/[webpack]/lib/NormalModuleFactory.js:116:11
-  
-  - NormalModuleFactory.js:670 
-    [homework-07]/[webpack]/lib/NormalModuleFactory.js:670:25
-  
-  - NormalModuleFactory.js:855 
-    [homework-07]/[webpack]/lib/NormalModuleFactory.js:855:8
-  
-  - NormalModuleFactory.js:975 
-    [homework-07]/[webpack]/lib/NormalModuleFactory.js:975:5
-  
-  - child-compiler.js:169 
-    [homework-07]/[html-webpack-plugin]/lib/child-compiler.js:169:18
-  
-  - Compiler.js:551 finalCallback
-    [homework-07]/[webpack]/lib/Compiler.js:551:5
-  
-  - Compiler.js:577 
-    [homework-07]/[webpack]/lib/Compiler.js:577:11
-  
-  - Compiler.js:1196 
-    [homework-07]/[webpack]/lib/Compiler.js:1196:17
-  
-  
-  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
-    [homework-07]/[tapable]/lib/Hook.js:18:14
-  
-  - Compiler.js:1192 
-    [homework-07]/[webpack]/lib/Compiler.js:1192:33
-  
-  - Compilation.js:2787 finalCallback
-    [homework-07]/[webpack]/lib/Compilation.js:2787:11
-  
-  - Compilation.js:3092 
-    [homework-07]/[webpack]/lib/Compilation.js:3092:11
-  
-  
-</pre>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="./img/logo-aba.png">
+    <link rel="stylesheet" href="./styles/style.scss">
+    <title>ECOS</title>
+<script defer src="bundle.js?4706d47921e410f708f9"></script><link href="style.css?4706d47921e410f708f9" rel="stylesheet"></head>
+<body>
+    <header>
+        <nav>
+            <div class="container-header-60">
+                <ul>
+                    <li>
+                        <a href=""><img src="./img/ecos-white.png" alt=""></a>
+                    </li>
+                    <li class="inicio-container">
+                        <a href=""><span class="fa-solid fa-bars menu-hamb"></span></a>
+                        <p>Início</p>
+                    </li>
+                    <li>
+                        <div class="search-header">
+                            <input type="text" placeholder="Pesquisar" >
+                            <span class="fa-solid fa-magnifying-glass"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>     
+            
+            <div class="container-header-40">
+                <span class="fa-solid fa-bell"></span>
+                <div class="menu-perfil">
+                    <img src="./img/photo.jpeg" alt=""> 
+                    <span class="fa-solid fa-chevron-down"></span>
+                </div>     
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-every">
+        <div class="noticias">
+            <div class="header-noticias">
+                <p>NOTÍCIAS RECENTES</p>
+            </div>
+            <div class="noticias-card-container">
+                <div class="card-noticias">
+                    <div class="noticias-img-container">
+                        <img src="./img/img-card-noticias.png" alt="imagem-card">
+                    </div>
+                    <div class="noticias-txt">
+                        <p>A laboral está de volta!</p>
+                        <p>Depois de uma pequena pausa, estamos de volta no formato híbrido! Agora, nossos encontros poderão ser presenciais na nossa sede, mas sempre com transmissão ao vivo para quem só pode ou prefere acompanhar online.</p>
+                        <p class="p-negrito">Anote na agenda:</p>
+                        <div class="noticias-rodape">
+                            <p>07/10/2022</p>
+                            <div class="icons-container">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="p-icon">7</p>
+                                <i class="fa-solid fa-comments"></i>
+                                <p class="p-icon">0</p>
+                                <i class="fa-solid fa-eye"></i>
+                                <p class="p-icon">29</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-noticias">
+                    <div class="noticias-img-container">
+                        <img src="./img/img-card-noticias.png" alt="imagem-card">
+                    </div>
+                    <div class="noticias-txt">
+                        <p>A laboral está de volta!</p>
+                        <p>Depois de uma pequena pausa, estamos de volta no formato híbrido! Agora, nossos encontros poderão ser presenciais na nossa sede, mas sempre com transmissão ao vivo para quem só pode ou prefere acompanhar online.</p>
+                        <p class="p-negrito">Anote na agenda:</p>
+                        <div class="noticias-rodape">
+                            <p>07/10/2022</p>
+                            <div class="icons-container">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="p-icon">7</p>
+                                <i class="fa-solid fa-comments"></i>
+                                <p class="p-icon">0</p>
+                                <i class="fa-solid fa-eye"></i>
+                                <p class="p-icon">29</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-noticias">
+                    <div class="noticias-img-container">
+                        <img src="./img/img-card-noticias.png" alt="imagem-card">
+                    </div>
+                    <div class="noticias-txt">
+                        <p>A laboral está de volta!</p>
+                        <p>Depois de uma pequena pausa, estamos de volta no formato híbrido! Agora, nossos encontros poderão ser presenciais na nossa sede, mas sempre com transmissão ao vivo para quem só pode ou prefere acompanhar online.</p>
+                        <p class="p-negrito">Anote na agenda:</p>
+                        <div class="noticias-rodape">
+                            <p>07/10/2022</p>
+                            <div class="icons-container">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="p-icon">7</p>
+                                <i class="fa-solid fa-comments"></i>
+                                <p class="p-icon">0</p>
+                                <i class="fa-solid fa-eye"></i>
+                                <p class="p-icon">29</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-noticias">
+                    <div class="noticias-img-container">
+                        <img src="./img/img-card-noticias.png" alt="imagem-card">
+                    </div>
+                    <div class="noticias-txt">
+                        <p>A laboral está de volta!</p>
+                        <p>Depois de uma pequena pausa, estamos de volta no formato híbrido! Agora, nossos encontros poderão ser presenciais na nossa sede, mas sempre com transmissão ao vivo para quem só pode ou prefere acompanhar online.</p>
+                        <p class="p-negrito">Anote na agenda:</p>
+                        <div class="noticias-rodape">
+                            <p>07/10/2022</p>
+                            <div class="icons-container">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="p-icon">7</p>
+                                <i class="fa-solid fa-comments"></i>
+                                <p class="p-icon">0</p>
+                                <i class="fa-solid fa-eye"></i>
+                                <p class="p-icon">29</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-noticias">
+                    <div class="noticias-img-container">
+                        <img src="./img/img-card-noticias.png" alt="imagem-card">
+                    </div>
+                    <div class="noticias-txt">
+                        <p>A laboral está de volta!</p>
+                        <p>Depois de uma pequena pausa, estamos de volta no formato híbrido! Agora, nossos encontros poderão ser presenciais na nossa sede, mas sempre com transmissão ao vivo para quem só pode ou prefere acompanhar online.</p>
+                        <p class="p-negrito">Anote na agenda:</p>
+                        <div class="noticias-rodape">
+                            <p>07/10/2022</p>
+                            <div class="icons-container">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="p-icon">7</p>
+                                <i class="fa-solid fa-comments"></i>
+                                <p class="p-icon">0</p>
+                                <i class="fa-solid fa-eye"></i>
+                                <p class="p-icon">29</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-noticias">
+                    <div class="noticias-img-container">
+                        <img src="./img/img-card-noticias.png" alt="imagem-card">
+                    </div>
+                    <div class="noticias-txt">
+                        <p>A laboral está de volta!</p>
+                        <p>Depois de uma pequena pausa, estamos de volta no formato híbrido! Agora, nossos encontros poderão ser presenciais na nossa sede, mas sempre com transmissão ao vivo para quem só pode ou prefere acompanhar online.</p>
+                        <p class="p-negrito">Anote na agenda:</p>
+                        <div class="noticias-rodape">
+                            <p>07/10/2022</p>
+                            <div class="icons-container">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="p-icon">7</p>
+                                <i class="fa-solid fa-comments"></i>
+                                <p class="p-icon">0</p>
+                                <i class="fa-solid fa-eye"></i>
+                                <p class="p-icon">29</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="diversos">
+            <div class="processos">
+                <div class="header-processos">
+                    <p>SISTEMAS E PROCESSOS</p>
+                </div>
+                <div class="sistemas-processos-body">
+                    <div class="primeira-linha-icons">
+                        <a href="" class="box-icones"><i class="fa-solid fa-users fa-2x"></i><h5>Contatos</h5></a>
+                        <a href="" class="box-icones"><i class="fa-solid fa-clock fa-2x"></i><h5>Portal Metadados</h5></a>
+                        <a href="" class="box-icones"><i class="fa-solid fa-brain fa-2x"></i><h5>BI - DBC</h5></a>
+                    </div>
+                    <div class="segunda-linha-icons">
+                        <a href="" class="box-icones"><i class="fa-solid fa-envelope fa-2x"></i><h5>Emails</h5></a>
+                        <a href="" class="box-icones"><i class="fa-solid fa-screwdriver-wrench fa-2x"></i><h5>CSC</h5></a>
+                        <a href="" class="box-icones"><i class="fa-solid fa-folder-open fa-2x"></i><h5>Documentos DBC</h5></a>    
+                    </div>
+                    <div class="terceira-linha-icons">
+                        <a href="" class="box-icones"><i class="fa-solid fa-cloud fa-2x"></i><h5>File Cloud</h5></a>      
+                    </div>
+                </div>
+            </div>
+
+            <div class="aniv">
+                <div class="header-aniv">
+                    <p>Aniversários de hoje</p>
+                </div> 
+                
+                <div class="aniv-container">
+                    <div class="aniv-cards">
+                        <img src="./img/photo.jpeg" alt="">
+                    </div>
+
+                    <div class="textos-aniv">
+                        <h2>Gabriela Ferreira</h2>
+                        <p>gabriela.ferreira@dbccompany.com.br</p>
+                        <div class="data-icon">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <p>12 de Outubro</p>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="aniv-container">
+                    <div class="aniv-cards">
+                        <img src="./img/photo.jpeg" alt="">
+                    </div>
+
+                    <div class="textos-aniv">
+                        <h2>Jonas Cunha</h2>
+                        <p>jonas.cunha@dbccompany.com.br</p>
+                        <div class="data-icon">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <p>11 de Outubro</p>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="aniv-container">
+                    <div class="aniv-cards">
+                        <img src="./img/photo.jpeg" alt="">
+                    </div>
+
+                    <div class="textos-aniv">
+                        <h2>Nicolas Andrade</h2>
+                        <p>nicolas.andrade@dbccompany.com.br</p>
+                        <div class="data-icon">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <p>11 de Outubro</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="header-aniv">
+                    <p>Últimos Aniversários</p>
+                </div> 
+                <div class="aniv-container">
+                    <div class="aniv-cards">
+                        <img src="./img/photo.jpeg" alt="">
+                    </div>
+
+                    <div class="textos-aniv">
+                        <h2>Gabriela Ferreira</h2>
+                        <p>gabriela.ferreira@dbccompany.com.br</p>
+                        <div class="data-icon">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <p>12 de Outubro</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="aniv-container">
+                    <div class="aniv-cards">
+                        <img src="./img/photo.jpeg" alt="">
+                    </div>
+
+                    <div class="textos-aniv">
+                        <h2>Gabriela Ferreira</h2>
+                        <p>gabriela.ferreira@dbccompany.com.br</p>
+                        <div class="data-icon">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <p>12 de Outubro</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="aniv-container">
+                    <div class="aniv-cards">
+                        <img src="./img/photo.jpeg" alt="">
+                    </div>
+
+                    <div class="textos-aniv">
+                        <h2>Gabriela Ferreira</h2>
+                        <p>gabriela.ferreira@dbccompany.com.br</p>
+                        <div class="data-icon">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <p>12 de Outubro</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="header-aniv">
+                    <p>Proxímos Aniversários</p>
+                </div> 
+                
+                <div class="aniv-container">
+                    <div class="aniv-cards">
+                        <img src="./img/photo.jpeg" alt="">
+                    </div>
+
+                    <div class="textos-aniv">
+                        <h2>Gabriela Ferreira</h2>
+                        <p>gabriela.ferreira@dbccompany.com.br</p>
+                        <div class="data-icon">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <p>12 de Outubro</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="aniv-container">
+                    <div class="aniv-cards">
+                        <img src="./img/photo.jpeg" alt="">
+                    </div>
+
+                    <div class="textos-aniv">
+                        <h2>Gabriela Ferreira</h2>
+                        <p>gabriela.ferreira@dbccompany.com.br</p>
+                        <div class="data-icon">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <p>12 de Outubro</p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

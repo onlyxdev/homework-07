@@ -27,12 +27,13 @@ module.exports = {
       filename: 'style.css'
     }),
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: './index.html',
       hash: true
     }),
     new HtmlWebpackPlugin({
-      filename: 'about.html',
-      template: './about.html',
+      filename: 'perfil.html',
+      template: './perfil.html',
       hash: true
     }),
     new CopyPlugin({
