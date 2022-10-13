@@ -4,27 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/style.scss">
     <link rel="stylesheet" href="./styles/perfil.scss">
     <title>Perfil</title>
-<script defer src="bundle.js?4706d47921e410f708f9"></script><link href="style.css?4706d47921e410f708f9" rel="stylesheet"></head>
+<script defer src="bundle.js?d9c89b836d31411de7a2"></script><link href="style.css?d9c89b836d31411de7a2" rel="stylesheet"></head>
 <body>
     <header>
         <nav>
             <div class="container-header-60">
                 <ul>
                     <li>
-                        <a href=""><img src="./img/ecos-white.png" alt=""></a>
+                        <a href="./index.html"><img src="./img/ecos-white.png" alt=""></a>
                     </li>
-                    <li class="inicio-container">
+                    <li class="inicio-container inicio-container-perfil">
                         <a href=""><span class="fa-solid fa-bars menu-hamb"></span></a>
-                        <p>Início</p>
-                    </li>
-                    <li>
-                        <div class="search-header">
-                            <input type="text" placeholder="Pesquisar" >
-                            <span class="fa-solid fa-magnifying-glass"></span>
-                        </div>
+                        <p><a href="./index.html">Pessoas - Colaborador</a></p>
                     </li>
                 </ul>
             </div>     
@@ -32,18 +27,137 @@
             <div class="container-header-40">
                 <span class="fa-solid fa-bell"></span>
                 <div class="menu-perfil">
-                    <img src="./img/photo.jpeg" alt=""> 
+                    <a href="./perfil.html"><img src="./img/photo.jpeg" alt=""></a>
                     <span class="fa-solid fa-chevron-down"></span>
                 </div>     
             </div>
         </nav>
     </header>
 
+    <div class="botoes-fixos">
+        <button class="save"><i class="fa fa-save" style="font-size:24px"></i></button>
+        <button class="discard"><i class="fa fa-close" style="font-size:24px"></i></button>
+    </div>
+
     <div class="container-every">
         <div class="perfil-container">
-           <div></div>
-           <div></div>
-           <div></div>
+           <div class="info-basicas">
+                <div class="info-header">
+                    <div class="img-info-container">
+                        <img src="./img/photo.jpeg" alt="foto-perfil">
+                    </div>
+                    <div class="info-header-txt">
+                        <p>Login: gabriela.ferreira</p>
+                        <p>Email: gabriela.ferreira@dbccompany.com.br</p>
+                        <p>Nascimento: 12/10/1997</p>
+                    </div>
+                </div>
+                <div class="info-form">
+                    <div class="form-l1">
+                        <div class="info-nome-container">
+                            <p>Gabriela Ferreira</p>
+                            <p>Estagiária</p>
+                            <hr>
+                        </div>
+                        <form action="#">
+                            <select name="pronome" id="">
+                                <option value="Ela/Dela">Ela/Dela</option>
+                                <option value="Ele/Dele">Ele/Dele</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                            <input type="text" placeholder="Gerente de Recurso">
+                            <input type="tel" name="" id="" placeholder="Telefone">
+                            <input type="tel" name="" id="" placeholder="Ramal">
+                        </form>
+
+                    </div>
+                    <div class="form-l2">
+                        <div class="form-checkbox">
+                            <div class="checkbox-col">
+                                <div>
+                                    <input type="checkbox" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Gerente Comercial</label>           
+                                </div>                                
+                                <div>
+                                    <input type="checkbox" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Gerente</label>           
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Líder</label>           
+                                </div>
+                            </div>
+                            <div class="checkbox-col">
+                                <div>
+                                    <input type="checkbox" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Gerente de Operações</label>           
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Líder de RH</label>           
+                                </div>
+                            </div>
+                            <div class="checkbox-col">
+                                <div>
+                                    <input type="checkbox" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Tenho filho(a)</label>           
+                                </div>
+                            </div>                  
+                        </div>
+                        <div class="seletor">
+                            <div class="checkbox-ativo">
+                                <div>
+                                    <label for="html">Ativo</label>
+                                    <input type="checkbox" id="html" name="fav_language" value="HTML">          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="endereco">
+                <div class="endereco-header">
+                    <p>Endereco</p>
+                </div>
+                <div class="endereco-l1">
+                    <form action="#">
+                        <input type="text" placeholder="Cep" class="cep">
+                        <select name="logradouro" id="">
+                            <option value="">Rua</option selected>
+                            <option value="">Avenida</option>
+                            <option value="Travessa">Outro</option>
+                        </select>
+                        <input type="text" name="" id="" placeholder="Rua" class="rua">
+                        <input type="text" name="" id="" placeholder="Número">
+                        <input type="text" name="" id="" placeholder="Complemento">
+                    </form>
+                </div>
+                <div class="endereco-l2">
+                    <input type="text" name="" id="" placeholder="Bairro" class="rua">
+                    <input type="text" name="" id="" placeholder="Cidade">
+                    <input type="text" name="" id="" placeholder="Estado">
+                </div>
+           </div>
+           <div class="feed-knows">
+            <div class="feeds-conhecimentos">
+                <div class="feedbacks-gerais">
+                    <h3>Veja o que nossos colegas estão falando sobre Gabriel</h3>
+                    <div class="recebidos-concedidos">
+                        <div class="linha-f01"><h2>Recebidos</h2></div> 
+                        <div class="linha-f02"><h2>Concedidos</h2></div>          
+                    </div>
+                    <div class="feed-recebido"><p>Nenhum feedback recebido ainda</p></div>                      
+                </div> 
+           </div>
+
+           <div class="conhecimentos">
+                <div class="top-conhecimentos">
+                    <h2>Conhecimentos</h2>
+                    <button>+ Adicionar</button>
+                </div>
+                <p class="info-conhecimento">Nenhum conhecimento cadastrado</p>
+            </div> 
+           </div>
         </div>
     </div>
 
