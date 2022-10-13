@@ -1,4 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
+
+$bg-body: #eff3f8;
+$bg-secoes: #f8f9fa;
+$azul: #137191;
+
+html {
+    height: 100vh;
+}
+
+header {
+    .container-header-60 {
+    
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .inicio-container {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 350px;
+                height: 45px;
+                font-size: 20px;
+                font-weight: bold;
+                cursor: pointer;
+    
+                p{
+                    color: white;
+                    font-weight: bold;
+                    width: 300px;
+                }
+            }
+    
+            .inicio-container:hover {
+                background-color: rgba(0, 0, 0, .3);
+            }
+    
+        }
+    }         
+}
+
+.container-every {
+    margin: 60px 0px;
+
+    .perfil-container{
+        width: 100%;
+        height: 100%;
+    
+        .info-basicas {
+            background-color: $bg-secoes;
+            width: 100%;
+            height: 350px;
+            border: 1px solid rgb(0, 0, 0, .1);
+
+            .info-header {
+                background: url("../img/patternECOStransparente.png"), linear-gradient(to top right, #295ba7, #769048);
+                height: 150px;
+                padding: 0 2%;
+                display: flex;
+                align-items: center;
+
+                .img-info-container {
+                    background-color: white;
+                    width: 133px;
+                    height: 133px;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img{
+                        width: 130px;
+                        height: 130px;
+                        border-radius: 100%;
+                    }
+                }
+
+                .info-header-txt {
+                  display: flex;
+                  flex-direction: column;  
+                  color: white;
+                  margin-left: 30px;
+                  font-size: 16px;
+                  font-weight: 400;
+
+                  p + p {
+                    margin-top: 5px;
+                  }  
+                }
+            }
+
+            .info-form {
+                width: 100%;
+                height: 200px;
+                padding: 1%;
+
+                .form-l1 {
+                    display: flex;
+                    .info-nome-container {
+                        width: 150px;
+    
+                        p:nth-child(1) {
+                            font-size: 16px;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+    
+                        p:nth-child(2){
+                            font-size: 14px;
+                            margin-bottom: 10px;
+                        }
+    
+                        hr {
+                            width: 3px;
+                            border-top: 1px solid black;
+                            border-bottom: 0;
+                        }
+                    }
+
+                    form {
+                        margin-left: 50px;
+
+                        select, input {
+                            height: 40px;
+                            width: 200px;
+                            margin-left: 20px;
+                            border: 0;
+                            border-bottom: 1px solid rgb(0, 0, 0, .4);
+                            background-color: $bg-secoes;
+                        }
+
+                        input:focus {
+                            outline: none;
+                            border-bottom: 2px solid #295ba7;
+                        }
+                    }
+
+                }
+
+                .form-l2{
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 100%;
+                    height: 120px;
+
+                    .form-checkbox{
+                        display: flex;
+                        width: 565px;
+                        margin-top: 20px;
+
+                        .checkbox-col {
+                            display: flex;
+                            flex-direction: column;
+                            font-size: 15px;
+                            color: rgb(0, 0, 0, .4);
+                            
+                            div + div {
+                                margin-top: 10px;
+                            }
+
+                            div input {
+                                margin-right: 5px;
+                                width: 15px;
+                                height: 15px;
+                            }
+                        }
+
+                        .checkbox-col + .checkbox-col {
+                            margin-left: 40px;
+                        }
+
+                        .checkbox-col:last-child {
+                            color: black;
+                        }
+                    }
+
+                    .seletor {
+                        width: 100px;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+
+                        .checkbox-ativo {
+                            font-size: 16px;
+
+                            input {
+                                width: 30px;
+                                height: 30px;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .endereco {
+            background-color: $bg-secoes;
+            width: 100%;
+            height: 200px;
+            margin-top: 20px;
+            border: 1px solid rgb(0, 0, 0, .1);
+            padding: 1%;
+
+            .endereco-header {
+                margin-top: 5px;
+                p{
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: $azul;
+                }
+            }
+
+            .endereco-l1 {
+                margin-top: 20px;
+                form {
+                    select, input {
+                        height: 40px;
+                        width: 150px;
+                        margin-right: 20px;
+                        border: 0;
+                        border-bottom: 1px solid rgb(0, 0, 0, .4);
+                        background-color: $bg-secoes;
+                        }
+    
+                    input:focus {
+                        outline: none;
+                        border-bottom: 2px solid #295ba7;
+                    }
+
+                    input:nth-child(1){
+                        width: 100px;
+                    }
+
+                    input:nth-child(3){
+                        width: 250px;
+                    }
+
+                    input:nth-child(4){
+                        width: 100px;
+                    }
+
+                    input:nth-child(5){
+                        width: 200px;
+                    }
+
+                    .rua {
+                        width: 200px;
+                    }
+                }  
+            }
+
+            .endereco-l2 {
+                margin-top: 20px;
+
+                select, input {
+                    height: 40px;
+                    width: 150px;
+                    margin-right: 20px;
+                    border: 0;
+                    border-bottom: 1px solid rgb(0, 0, 0, .4);
+                    background-color: $bg-secoes;
+                    }
+
+                input:focus {
+                    outline: none;
+                    border-bottom: 2px solid #295ba7;
+                }
+
+                input:nth-child(1){
+                    width: 275px;
+                }
+
+                input:nth-child(2){
+                    width: 180px;
+                }
+
+                input:nth-child(3){
+                    width: 100px;
+                }
+            }
+            
+
+
+        }
+
+        //Comece aqui
+    }
+}
+
